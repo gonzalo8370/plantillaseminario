@@ -1,0 +1,360 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+     font-family: Baskerville Old Face;
+    src: url(BASKVILL.TTF);
+}
+body{
+    width: 100%;
+}
+/*-------------inicio de la barra de navegación-----------------------------------------*/
+nav{
+    background-color: whitesmoke;
+    height: 80px;
+    width: 100%;
+   position: absolute;
+       box-shadow: 1px -2px 13px -1px rgba(0,0,0,0.75);
+    z-index: 5;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: dimgrey;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background-color: gainsboro;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #26798E;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    border-top: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+@media all and (max-width: 952px){
+     nav{
+         position: fixed;
+    }
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 858px){
+    nav{
+        position: fixed;
+    }
+    .checkbtn{
+        display: block;
+        margin-top: 30px;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: whitesmoke;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #26798e;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+/*------------------------------fin de la barra de navegacion-------------------------------------*/
+
+
+
+
+
+
+/*--------------------Inicia portada----------------------------------*/
+
+
+.portada{
+    background: url(portada1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(60vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed
+    box-shadow:
+}
+/*---------------------------fin de la portada---------------------------*/
+
+
+
+
+
+
+/*-----------------------------inicia la frase-------------------------*/
+.frase{
+    width: 100%;
+    height: 25%;
+    background-imag: ;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    flex-direction: column;
+    margin: 5px;
+    border: 1px;
+    border-color: black;
+}
+
+.contfrase{
+    font-size: 200%;
+    font-style: oblique;
+    width: 80%;
+    background-color: white;
+    text-align: center;
+}
+/*-------------------------fin de la frase-----------------------------*/
+
+
+/*-----------------------------inicia la frase-------------------------*/
+.vocacional{
+    width: 100%;
+    height: 50%;
+    background-image: url(sacerdotes.jpg) ;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-color: black;
+      background-size: cover;
+    background-position: center center;
+    
+}
+
+/*-------------------------fin de la frase-----------------------------*/
+
+
+
+
+
+
+/*-----------------------------descripcion del seminario-------------------------*/
+.seminario{
+    margin-top:5%; 
+    width: 100%;
+    height: auto;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    flex-direction: column;
+    padding: 30px;
+    
+}
+/*----------------------fin de descripcion del seminario--------------------------------*/
+
+
+
+
+/*----------------------publicidad y logos--------------------------------*/
+.publicidad{
+    width: 100%;
+    height: 40%;
+    background-color: #eeeeee;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: -1px -1px 23px -2px rgba(0,0,0,0.36) inset;
+}
+
+.estilologo{
+    width: 100px; height: 100px; border-radius: 50%; background-color: white; display: flex; align-items: center;justify-content: center;
+}
+
+/*-------------------------fin de publicidad y logos-----------------------------*/
+
+
+
+
+
+
+/*-------------------inician los marcos-----------------------------------*/
+.marcos{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.marquito{
+    width: 400px;
+    height: 300px;
+    margin: 20px  ;
+    padding: 20px;
+    background-color: whitesmoke;
+    
+}
+
+.marquito:hover{
+    width: 410px;
+    height: 310px;
+    transition: .2s;
+    box-shadow: 10px 10px 33px 0px rgba(0,0,0,0.4);
+}
+
+.contenidomarquito{
+width: 100%;
+height: 70%;
+    background-color: aqua;
+      background-size: cover;
+    background-position: center center;
+
+}
+
+.vermas:hover{
+    width: 45%; height: 55%; background-color: limegreen; border-radius: 5%;  display: flex;
+    justify-content: center; align-items: center; color: white; font-weight: bold; font-size: 120%;
+    transition: .2s;
+    box-shadow: -1px -1px 9px -2px rgba(0,0,0,0.36);
+    transition: .5s;
+}
+/*--------------fin de los marquitos----------------------------------------*/
+
+
+
+
+/*--------------barra de las redes sociales----------------------------------------*/
+.suscripcion{
+  width: 100%;
+    height: auto;
+    padding: 15px;
+    background-color: whitesmoke; 
+      display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.iconos{
+    width: 80px; height: 80px; background-color: white; display: flex; align-items: center;justify-content: center;
+}
+.iconos:hover{
+    width: 85px;
+    height: 85px;
+    transition: .5s;
+}
+/*----------------fin de la barra de redes sociales--------------------------------------*/
+
+
+
+
+/*----------------------promocion--------------------------------*/
+.promocion{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+  
+}
+.cuadropromocion{
+    width: 250px;
+    height: 250px;
+    background-color: antiquewhite;
+     background-size: cover;
+    background-position: center center;
+     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+.cuadropromocion:hover{
+     box-shadow: 10px 10px 33px 0px rgba(0,0,0,0.4);
+    transition: .5s;
+}
+
+/*------------------------- fin de promocion-----------------------------*/
+
+
+
+
+
+
+
+
+/*---------------inicia el pie de página---------------------------------------*/
+.pie{
+    width: 100%;
+    height: auto;
+    background-color: #26798e;
+    color: white;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+     flex-direction: column;
+    padding: 40px;
+}
+/*-------------------fin del pie de pagina-----------------------------------*/
+
+
+
+
+
+@media all and (min-width: 858px){
+    .frase{height: 30%;}
+    
+}
